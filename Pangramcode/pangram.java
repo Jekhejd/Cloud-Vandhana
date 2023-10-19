@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class pangram {
     public static boolean isPangram(String input) {
-        // Convert the input to lowercase to make the check case-insensitive
+        
         input = input.toLowerCase();
 
-        // Create an array to keep track of the presence of each letter
+       
         boolean[] alphabet = new boolean[26];
 
         for (int i = 0; i < input.length(); i++) {
@@ -16,7 +16,7 @@ public class pangram {
             }
         }
 
-        // Check if all letters have been marked as present
+       
         for (boolean letterPresent : alphabet) {
             if (!letterPresent) {
                 return false;

@@ -40,7 +40,7 @@ public class pangram {
             System.out.println("The input is not a pangram.");
         }
 
-        scanner.close(); // Close the scanner when done.
+        scanner.close(); 
     }
 }
 

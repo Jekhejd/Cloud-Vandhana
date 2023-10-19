@@ -6,19 +6,16 @@ const rl = readline.createInterface({
 });
 
 function reverseWordsInSentence(sentence) {
-  // Split the sentence into words
+
   const words = sentence.split(" ");
 
-  // Initialize a variable to store the reversed sentence
   let reversedSentence = "";
 
   for (let word of words) {
-    // Reverse each word and append it to the reversed sentence
+   
     const reversedWord = word.split('').reverse().join('');
     reversedSentence += reversedWord + " ";
   }
-
-  // Remove the trailing space
   reversedSentence = reversedSentence.trim();
 
   return reversedSentence;
